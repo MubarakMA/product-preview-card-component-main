@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font-family1: 'Montserrat', sans-serif;
+    --font-family2: 'Fraunces', serif;
+}
+
+body{
+    background-color: var(--Cream);
+    display: grid;
+    place-items: center;
+}
+.picture{
+    /* height: 30px; */
+    width: 50%;
+    /* background-color: yellow; */
+    background-image: url('./images/image-product-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.board{
+    /* border: 1px solid black; */
+    display: flex;
+    min-width: 20px;
+    margin: 40vh 0;
+    border-radius: 10px;
+    /* height: 20%; */
+    /* width: 20%; */
+}
+
+.info{
+    background-color: var(--White);
+    width: 50%;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}
+h5{
+    font-family: var(--font-family1);
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 10px;
+}
+.name{
+    font-family: var(--font-family2);
+    color: var(--Very-dark-blue);
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.description{
+    font-family: var(--font-family1);
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pricetag{
+    display: flex;
+    /* justify-content: center; */
+}
+.bigprice{
+    font-family: var(--font-family2);
+    color: var(--Dark-cyan);
+}
+.smallprice{
+    margin: 13px 5px 25px 20px;
+    text-decoration:line-through;
+}
+button{
+    display: flex;
+    padding: 10px 55px;
+    /* justify-content: space-between; */
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--White);
+    font-family: var(--font-family1);
+    font-weight: 700;
+}
+button:hover{
+    background-color: var(--Dark-cyan);
+
+}
+
+.cart{
+    padding-right: 3px;
+}
+
